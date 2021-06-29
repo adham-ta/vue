@@ -77,7 +77,7 @@
           e = e.changedTouches ? e.changedTouches[0] : e
           if (this.dragging) {
             this.c.x = 160 + (e.pageX - this.start.x)
-            // dampen vertical drag by a factor
+            // dampen vertical drag by a factor and you f
             var dy = e.pageY - this.start.y
             var dampen = dy > 0 ? 1.5 : 4
             this.c.y = 160 + dy / dampen
